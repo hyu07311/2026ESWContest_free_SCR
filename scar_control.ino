@@ -1,15 +1,3 @@
-/**
- * @file   scar_control.ino
- * @brief  SCAR 계단 청소 로봇 — OpenCR 펌웨어 데모 버전
- *
- *  원본(scar_control_real.ino) 대비 변경사항:
- *    - 초음파 센서 제거 (ultrasonic_left/right 항상 0 전송)
- *    - 경광등 릴레이(RELAY_PIN) 제거
- *    - 슬라이드(ID 23) Mode 4(확장위치) → Mode 1(속도)
- *      target_slide_pos 필드를 속도값으로 재사용
- *      slide_pos 항상 0 전송 (Xavier에서 시간 기반 제어)
- */
-
 #include <micro_ros_arduino.h>
 #include <DynamixelSDK.h>
 #include <Servo.h>
