@@ -1,7 +1,5 @@
 """
-scar_full.launch.py
 ──────────────────────────────────────────────────────────
-SCAR 전체 시스템 통합 런치
 
 실행 순서:
   1. micro_ros_agent          — OpenCR USB 연결 (scar_cmd ↔ scar_status)
